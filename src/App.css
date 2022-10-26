@@ -1,38 +1,117 @@
-.App {
+video{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 80%;
+}
+
+.App{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: #021111;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 400px;
+  margin: 0 auto;
+  /*background-size: 300px;*/
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 5px;
+}
+
+.head{
+  width: 220px;
+  margin: 30px auto;
+}
+
+h1{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 200;
   color: white;
+  text-align: left;
+  line-height: 30px;
+  letter-spacing: 2px; 
 }
 
-.App-link {
-  color: #61dafb;
+.gradient{
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+  background-image: linear-gradient(to right, #9b11f7, #ec20b3);
+  margin-left: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  width: 380px;
+  margin: 5px auto;
+}
+
+.advice{
+  background:linear-gradient(#450272,50%, #9c2b9c);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 40px;
+  padding: 50px;
+  background-size: 300px;
+}
+
+.advice-type{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+}
+
+.btnform{
+  margin: 200px auto 30px auto;
+}
+
+.btn{
+  background: linear-gradient(to bottom right,#9900ff 10%, #c1379b);
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #a51bc0;
+}
+
+.footer{
+  background: #02110d;
+  border-top: 6px solid #9900cc;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+.date{
+	color: rgb(189, 184, 184);
+	font-size: 16px;
+  letter-spacing: .5px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.ftext{
+  color: rgb(189, 184, 184);
+	font-size: 10px;
+  letter-spacing: .5px;
+  font-family: 'DM Sans', sans-serif;
 }
