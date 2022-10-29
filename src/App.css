@@ -115,3 +115,30 @@ h1{
   letter-spacing: .5px;
   font-family: 'DM Sans', sans-serif;
 }
+
+@media all and (max-width: 500px) {
+  .App {
+    width: 240px;
+  }
+  .head{
+    width: 200px;
+  }
+  .container {
+    width: 220px;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .App {
+    width: 180px;
+  }
+  .head{
+    width: 180px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .container {
+    width: 180px;
+  }
+}
